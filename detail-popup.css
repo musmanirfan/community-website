@@ -1,0 +1,345 @@
+.inner-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f7ff;
+    overflow-y: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+.mx-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+#multi-step-form-container {
+    width: 40%;
+    /* margin: 0 auto; */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.button {
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #8075ff;
+    background-color: #8075ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    border: 1px solid #8075ff;
+    background-color: #8075ff;
+}
+
+.Back{
+    border: 1px solid #e5e5e5 !important;
+    background-color: #e5e5e5 !important;
+    color: black;
+}
+
+.mt-3 {
+    margin-top: 2rem;
+}
+
+.mt-3-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.l-operate-for {
+    display: flex;
+    /* background-color: #8075ff; */
+    gap: 10px;
+    align-items: center;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.visible{
+    font-weight: bold;
+}
+
+.OF {
+    background-color: #bb6ee7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.OF>p {
+    margin: 0;
+}
+
+.members>h5 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.members>p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.d-none {
+    display: none;
+}
+
+#email{
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+}
+
+.c-detail-1{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 10px 0 10px; */
+}
+
+.c-detail-1>img{
+    height: 28px;
+    width: 100px;
+}
+
+#search{
+    border: none;
+    padding: 15px 5px 15px 5px;
+}
+
+#search:hover{
+    border: none;
+}
+
+#search:active{
+    border: none;
+    outline: none;
+}
+
+#search:focus{
+    outline: none !important;
+}
+
+.c-detail-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgrey;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+}
+
+.c-detail-cont>p{
+    margin: 0;
+}
+
+.c-detail-cont>img{
+    width: 30px;
+    height: 20px;
+}
+
+.c-detail-cont>input{
+    width: 280px;
+}
+
+.c-detail-cont>input:active{
+    border: none;
+}
+
+.form-step {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.step3- {
+    display: flex;
+
+}
+
+.font-normal {
+    font-weight: bold;
+}
+
+ul.form-stepper {
+    counter-reset: section;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+ul.form-stepper .form-stepper-circle {
+    position: relative;
+}
+
+ul.form-stepper .form-stepper-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.form-stepper-horizontal {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+ul.form-stepper>li:not(:last-of-type) {
+    margin-bottom: 0.625rem;
+    -webkit-transition: margin-bottom 0.4s;
+    -o-transition: margin-bottom 0.4s;
+    transition: margin-bottom 0.4s;
+}
+
+.form-stepper-horizontal>li:not(:last-of-type) {
+    margin-bottom: 0 !important;
+}
+
+.form-stepper-horizontal li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-stepper-horizontal li:not(:last-child):after {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 1px;
+    content: "";
+    top: 60%;
+}
+
+.form-stepper-horizontal li:after {
+    background-color: #dee2e6;
+}
+
+.form-stepper-horizontal li.form-stepper-completed:after {
+    background-color: #8075ff;
+}
+
+.form-stepper-horizontal li:last-child {
+    flex: unset;
+}
+
+ul.form-stepper li a .form-stepper-circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    line-height: 1.7rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 50%;
+}
+
+.form-stepper .form-stepper-active .form-stepper-circle {
+    background-color: #8075ff !important;
+    color: #fff;
+}
+
+.form-stepper .form-stepper-active .label {
+    color: #8075ff !important;
+}
+
+.form-stepper .form-stepper-active .form-stepper-circle:hover {
+    background-color: #8075ff !important;
+    color: #fff !important;
+}
+
+.form-stepper .form-stepper-unfinished .form-stepper-circle {
+    background-color: #f8f7ff;
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle {
+    background-color: #8075ff !important;
+    color: #fff;
+}
+
+.form-stepper .form-stepper-completed .label {
+    color: #8075ff !important;
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle:hover {
+    background-color: #8075ff !important;
+    color: #fff !important;
+}
+
+.form-stepper .form-stepper-active span.text-muted {
+    color: #fff !important;
+}
+
+.form-stepper .form-stepper-completed span.text-muted {
+    color: #fff !important;
+}
+
+.form-stepper .label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.form-stepper a {
+    cursor: default;
+}
+
+.inp-text {
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.mt-3>a {
+    color: black;
+}

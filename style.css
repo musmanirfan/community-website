@@ -1,0 +1,17 @@
+body {
+    background-color: gray !important;
+    overflow-x: hidden !important;
+}
+
+.formHead {
+    width: 100%;
+    background-color: white !important;
+}
+
+.cont {
+    display: flex;
+    width: 100vw;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
