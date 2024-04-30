@@ -23,3 +23,13 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+const closeModal = () => {
+    modal.style.display = "none";
+}
+
+function hello(user){
+    console.log(`Hello ${user}`);
+}
+
+hello("Usman")

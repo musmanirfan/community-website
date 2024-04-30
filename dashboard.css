@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    height: 90vh;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+table{
+    height: 98vh;
+    width: 98%;
+    background-color: black;
+    
+}
+
+th{
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    width: 24.5%;
+}
+
+tr{
+    padding: 0;
+    margin: 0;
+    height: 15%;
+    background-color: white;
+}
+
+td{
+    border: 1px solid black;
+    width: 24.5%;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #e4e4e7;
+}
+
+
+.error-page{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.error-page>h3, p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.error-page>a>button{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #8075ff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
