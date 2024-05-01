@@ -1,4 +1,4 @@
-.inner-body{
+.inner-body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,17 +48,20 @@ h2 {
     cursor: pointer;
     width: 100%;
     margin-top: 10px;
+    font-family: roboto-bold !important;
 }
 
 .submit-btn {
     border: 1px solid #8075ff;
     background-color: #8075ff;
+    font-family: roboto-bold !important;
 }
 
-.Back{
+.Back {
     border: 1px solid #e5e5e5 !important;
     background-color: #e5e5e5 !important;
     color: black;
+    font-family: roboto-bold !important;
 }
 
 .mt-3 {
@@ -81,7 +84,7 @@ h2 {
     border-radius: 10px;
 }
 
-.visible{
+.visible {
     font-weight: bold;
 }
 
@@ -110,7 +113,7 @@ h2 {
     display: none;
 }
 
-#email{
+#email {
     width: 98%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -120,7 +123,7 @@ h2 {
     margin-top: 5px;
 }
 
-.c-detail-1{
+.c-detail-1 {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -128,30 +131,30 @@ h2 {
     /* padding: 0 10px 0 10px; */
 }
 
-.c-detail-1>img{
+.c-detail-1>img {
     height: 28px;
     width: 100px;
 }
 
-#search{
+#search {
     border: none;
     padding: 15px 5px 15px 5px;
 }
 
-#search:hover{
+#search:hover {
     border: none;
 }
 
-#search:active{
+#search:active {
     border: none;
     outline: none;
 }
 
-#search:focus{
+#search:focus {
     outline: none !important;
 }
 
-.c-detail-cont{
+.c-detail-cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,20 +163,20 @@ h2 {
     border-radius: 10px;
 }
 
-.c-detail-cont>p{
+.c-detail-cont>p {
     margin: 0;
 }
 
-.c-detail-cont>img{
+.c-detail-cont>img {
     width: 30px;
     height: 20px;
 }
 
-.c-detail-cont>input{
+.c-detail-cont>input {
     width: 280px;
 }
 
-.c-detail-cont>input:active{
+.c-detail-cont>input:active {
     border: none;
 }
 
@@ -260,11 +263,14 @@ ul.form-stepper>li:not(:last-of-type) {
 
 .form-stepper-horizontal li:after {
     background-color: #dee2e6;
+
 }
 
 .form-stepper-horizontal li.form-stepper-completed:after {
     background-color: #8075ff;
 }
+
+
 
 .form-stepper-horizontal li:last-child {
     flex: unset;
@@ -283,11 +289,18 @@ ul.form-stepper li a .form-stepper-circle {
 
 .form-stepper .form-stepper-active .form-stepper-circle {
     background-color: #8075ff !important;
+    font-weight: 900 !important;
     color: #fff;
+}
+
+.ut {
+    font-weight: 900 !important;
 }
 
 .form-stepper .form-stepper-active .label {
     color: #8075ff !important;
+    font-weight: 900 !important;
+    font-family: roboto-bold !important;
 }
 
 .form-stepper .form-stepper-active .form-stepper-circle:hover {
@@ -306,6 +319,8 @@ ul.form-stepper li a .form-stepper-circle {
 
 .form-stepper .form-stepper-completed .label {
     color: #8075ff !important;
+    font-weight: 900 !important;
+    font-family: roboto-bold !important;
 }
 
 .form-stepper .form-stepper-completed .form-stepper-circle:hover {
@@ -322,8 +337,10 @@ ul.form-stepper li a .form-stepper-circle {
 }
 
 .form-stepper .label {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
+    font-weight: 900 !important;
+    font-family: roboto-bold !important;
 }
 
 .form-stepper a {
@@ -340,6 +357,65 @@ ul.form-stepper li a .form-stepper-circle {
     margin-bottom: 10px;
 }
 
-.mt-3>a {
+.mt-3>.link>button {
     color: black;
+    font-size: 14px;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* .mt-3 > a:focus::after {
+    content: "Finding your Skool ID: \A Go to Skool Picture at the top right > Profile > The @ tag below your name";
+    white-space: pre; /* Ensures that \A is interpreted as a line break
+    margin-left: 10px;
+    background-color: white; 
+     border: 1px solid;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.mt-3 > a:focus::after::before {
+    content: "Finding your Skool ID: ";
+    font-weight: bold;
+} */
+
+
+.link{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    gap: 10px;
+}
+
+.popup-cont {
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 5px 10px 18px #888888;
+    width: 78%;
+}
+
+.popup-cont>h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.popup-cont>h3 {
+    font-family: roboto-bold;
+    font-size: 14px;
+}
+
+.popup-cont>p {
+    font-size: 12px;
+}
+
+.popup-cont>p>span {
+    color: #8075ff;
+    text-decoration: underline;
+    cursor: pointer;
 }

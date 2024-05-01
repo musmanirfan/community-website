@@ -1,11 +1,28 @@
 body {
-    background-color: gray !important;
+    background-color: #e4e4e7 !important;
     overflow-x: hidden !important;
+    font-family: Roboto !important;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(fonts/Roboto-Bold.ttf);
 }
 
 .formHead {
     width: 100%;
     background-color: white !important;
+}
+
+.popup-cont{
+    opacity: 0;
 }
 
 .cont {
@@ -14,4 +31,77 @@ body {
     height: 95vh;
     justify-content: center;
     align-items: center;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.profile>img {
+    border-radius: 7px;
+}
+
+.profile>h3{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #e4e4e7;
+    padding: 10px;
+    border-radius: 7px;
+    width: 50%;
+    height: fit-content;
+    gap: 10px;
+    transition-property: background;
+    transition-timing-function: ease;
+    transition-duration: .15s !important;
+}
+
+.search input {
+    padding: 0;
+    height: fit-content;
+    border: none;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+.search input:focus {
+    border: none;
+    outline: none;
+}
+
+.global {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #e4e4e7;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.global>p {
+    margin: 0;
 }

@@ -1,6 +1,14 @@
+    body{
+        background-color: #fff !important;
+        overflow: hidden;
+    }
+
 .map{
-    height: 97vh;
+    height: 90vh;
     width: 100%;
+    margin-top: 71PX !important;
+    /* margin: 0 !important; */
+    padding: 0 !important;
 }
 
 .place-card.place-card-large {

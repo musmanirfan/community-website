@@ -11,6 +11,15 @@
     --dropdown-color: black;
 }
 
+.button>img{
+    border-radius: 10px;
+    opacity: 1.0
+}
+
+.button>img:hover{
+    opacity: 0.8;
+}
+
 /* Center the planet */
 /* body { */
 /* display: flex; */
@@ -76,8 +85,8 @@ a.button:active {
 .dropdown ul {
     position: absolute;
     margin: 20px 0 0 0;
-    padding: 20px 0;
-    width: var(--dropdown-width);
+    padding: 10px 10px;
+    width: fit-content;
     right: 4%;
     bottom: 75px;
     margin-left: calc((var(--dropdown-width) / 2) * -1);
@@ -100,14 +109,14 @@ a.button:active {
     padding: 10px 0.8rem;
     width: 100%;
     box-sizing: border-box;
-
+    font-size: 13px;
     color: var(--dropdown-color);
     text-decoration: none;
 }
 
 .dropdown ul li a:hover {
-    background-color: var(--dropdown-highlight);
-    color: var(--dropdown-background);
+    background-color: #D3D4D7;
+    border-radius: 7px;
 }
 
 /* Dropdown triangle */
