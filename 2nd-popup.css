@@ -119,3 +119,81 @@
 .modal-content2>p{
     margin: 0;
 }
+
+
+.mt-3 {
+    /* margin-top: 2rem; */
+}
+
+.mt-3-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.mt-3>.link>button {
+    color: black;
+    font-size: 14px;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.inp-text {
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    gap: 10px;
+}
+
+
+.popup-cont {
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 5px 10px 18px #888888;
+    width: 78%;
+}
+
+.popup-cont>h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.popup-cont>h3 {
+    font-family: roboto-bold;
+    font-size: 14px;
+}
+
+.popup-cont>p {
+    font-size: 12px;
+}
+
+.popup-cont>p>span {
+    color: #8075ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup-cont{
+    opacity: 0;
+}
+
+.discription{
+    font-size: 13px;
+}

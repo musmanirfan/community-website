@@ -29,3 +29,22 @@ console.log("hfgdrgsx");
 const closeModal2 = () => {
     modal2.style.display = "none";
 }
+
+
+
+const popoverToggle = document.getElementById("popoverToggle");
+const popupcont = document.getElementById("popup-cont");
+
+const changeStyle = () => {
+    // Get the current opacity value
+    const currentOpacity = parseFloat(window.getComputedStyle(popupcont).opacity);
+
+    // Toggle the opacity
+    if (currentOpacity === 0) {
+        popupcont.style.opacity = "1"; // If opacity is 0, set it to 1 (100%)
+    } else {
+        popupcont.style.opacity = "0"; // If opacity is 1, set it to 0 (0%)
+    }
+}
+
+popoverToggle.addEventListener("click", changeStyle);

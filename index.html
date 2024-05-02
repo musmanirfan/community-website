@@ -39,11 +39,12 @@
             <a class="button"><img src="images/location.jpg" alt="" width="40" height="40"></a>
         </summary>
         <ul class="dropdown-l">
-            <li><a id="myBtn" href="#"><img width="12" height="12" src="images/pencil.png" alt="pencil">&nbsp;Edit
+            <!-- <li><a id="myBtn" href="#"><img width="12" height="12" src="images/pencil.png" alt="pencil">&nbsp;Edit
                     Location</a>
-            </li>
-            <!-- <li><a id="myBtn2" href="#"><img width="12" height="12" src="images/zoom in.png" alt="pencil">&nbsp;Locate your pin</a>
             </li> -->
+            <li><a id="myBtn2" href="#"><img width="12" height="12" src="images/zoom in.png" alt="pencil">&nbsp;Add your
+                    location</a>
+            </li>
             <li><a href="#"><img width="12" height="12" src="images/report a bug.png" alt="pencil">&nbsp;Report a
                     bug</a></li>
             <li><a href="#"><img width="12" height="12" src="images/own map.png" alt="pencil">&nbsp;Create your own
@@ -62,7 +63,6 @@
             <h3>Edit your location on the map</h3><br>
             <label for="1st-popup">Skool ID</label><br>
             <input type="email" name="skool-id-popup" id="1st-popup" class="first-popup-email" placeholder="@ emilio">
-            <a href="#">How to find?</a><br><br>
             <label for="1st-popup">Display Name</label><br>
             <input required type="text" name="skool-id-popup" id="1st-popup" class="first-popup-email"
                 value="test"><br><br>
@@ -87,17 +87,34 @@
         <!-- Modal content -->
         <div class="modal-content2">
             <span class="close2">&times;</span>
-            <h3>Edit your location on the map</h3><br>
-            <label for="1st-popup">Skool ID</label><br>
-            <input type="email" name="skool-id-popup" id="1st-popup" class="first-popup-email2" placeholder="@ first-last-123456">
-            <a href="#">How to find?</a><br><br>
+            <h3>Add your location on the map</h3><br>
+            <!-- <label for="1st-popup">Skool ID</label><br>
+            <input type="email" name="skool-id-popup" id="1st-popup" class="first-popup-email2"
+                placeholder="@ first-last-123456">
+            <a href="#">How to find?</a><br><br> -->
+            <div class="mt-3">
+                <p>Skool ID</p>
+                <input type="text" name="id" class="inp-text" placeholder="@ first-last-123456">
+                <div class="link">
+                    <button type="button" id="popoverToggle">How to find?</button>
+
+                    <!-- <dialog open> -->
+                    <div class="popup-cont" id="popup-cont">
+                        <h3>Finding your Skool ID:</h3>
+                        <p>Go to <span>Skool</span> Picture at the top right > Profile > The @ tag below your
+                            name</p>
+                    </div>
+
+                    <!-- </dialog> -->
+                </div>
+            </div>
             <label for="1st-popup">Display Name</label><br>
             <input required type="text" name="skool-id-popup" id="1st-popup2" class="first-popup-email2"
                 placeholder="First Last"><br><br>
             <label for="1st-popup">Location</label><br>
             <input required type="text" name="skool-id-popup" id="1st-popup2" class="first-popup-email2"
                 placeholder="Type to search...">
-            <p>For your safety, please add an approximate location and NOT your exact address</p>
+            <p class="discription">For your safety, please add an approximate location and NOT your exact address</p>
             <div class="first-modal-btn2">
                 <button class="close-btn2 close2" onclick="closeModal2()">close</button>
                 <button class="edit2">Edit</button>

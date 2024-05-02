@@ -4,6 +4,7 @@ body {
     font-family: Roboto !important;
     margin: 0;
     padding: 0;
+    font-size: 14px;
 }
 
 @font-face {
